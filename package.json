@@ -1,0 +1,41 @@
+{
+  "name": "ts-learning",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "~27.4",
+    "@types/node": "~16.11",
+    "@typescript-eslint/eslint-plugin": "~5.14",
+    "@typescript-eslint/parser": "~5.14",
+    "eslint": "~8.11",
+    "eslint-config-prettier": "~8.5",
+    "eslint-plugin-jest": "~26.1",
+    "jest": "~27.5",
+    "prettier": "~2.5",
+    "rimraf": "~3.0",
+    "ts-jest": "~27.1",
+    "tsutils": "~3.21"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node build/src/main.js",
+    "build": "tsc -p ./tsconfig.json",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "build:release": "npm run clean && tsc -p tsconfig.release.json",
+    "lint": "eslint . --ext .ts",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HuyCam/typescript-learning.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HuyCam/typescript-learning/issues"
+  },
+  "homepage": "https://github.com/HuyCam/typescript-learning#readme"
+}
